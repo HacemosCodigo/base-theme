@@ -29,7 +29,7 @@
 		wp_localize_script( 'functions', 'ajax_url', admin_url('admin-ajax.php') );
 
 		// styles
-		wp_register_style( 'styles', get_stylesheet_uri() );
+		wp_enqueue_style( 'styles', get_stylesheet_uri() );
 
 	});
 
@@ -48,7 +48,7 @@
 		wp_localize_script( 'admin-js', 'ajax_url', admin_url('admin-ajax.php') );
 
 		// styles
-		wp_register_style( 'admin-css', CSSPATH.'admin.css' );
+		wp_enqueue_style( 'admin-css', CSSPATH.'admin.css' );
 
 	});
 
