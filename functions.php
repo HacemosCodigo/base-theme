@@ -99,13 +99,13 @@
 	require_once('inc/metaboxes.php');
 
 
-	require_once('inc/taxonomies.php' );
+	require_once('inc/taxonomies.php');
 
 
 	require_once('inc/pages.php');
 	
 	
-	require_once 'inc/users.php';
+	require_once('inc/users.php');
 
 
 
