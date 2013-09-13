@@ -1,6 +1,6 @@
 WordPress Base Theme
 =============
-![Los Maquiladores](https://raw.github.com/HacemosCodigo/related-posts/master/images/logo_maquila.png)
+![Los Maquiladores](https://raw.github.com/HacemosCodigo/base-theme/master/images/logo_maquila.png)
 
 Usar para iniciar un nuevo tema de WordPress
 
