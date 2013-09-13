@@ -21,6 +21,13 @@
 		$contactmethods['facebook'] = 'Facebook';
 		return $contactmethods;
 	});
+	
+	
+	add_action('admin_menu', function() use (&$current_user){
+		if ( in_array('developer', $current_user->roles) ){
+			add_options_page(__('All Settings'), __('All Settings'), 'developer', 'options.php');
+		}
+	});
 
 
 
