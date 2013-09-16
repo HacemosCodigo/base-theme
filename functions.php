@@ -209,6 +209,7 @@
 	function nav_is($string = ''){
 		$query = get_queried_object();
 		if( preg_match("/$string/i", $query->slug)
-			OR preg_match("/$string/i", remove_accents($query->post_title) ) )
+			OR preg_match("/$string/i", $query->name)
+			OR preg_match("/$string/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
 			echo 'active';
 	}
