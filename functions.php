@@ -208,8 +208,10 @@
 	 */
 	function nav_is($string = ''){
 		$query = get_queried_object();
-		if( preg_match("/$string/i", $query->slug)
-			OR preg_match("/$string/i", $query->name)
-			OR preg_match("/$string/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
+
+		if( isset($query->slug) AND preg_match("/$string/i", $query->slug)
+			OR isset($query->name) AND preg_match("/$string/i", $query->name)
+			OR isset($query->rewrite) AND preg_match("/$string/i", $query->rewrite['slug'])
+			OR isset($query->post_title) AND preg_match("/$string/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
 			echo 'active';
 	}
