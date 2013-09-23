@@ -147,6 +147,16 @@
 
 
 
+// REMOVE ACCENTS AND THE LETTER Ñ FROM FILE NAMES ///////////////////////////////////
+
+
+
+	add_filter( 'sanitize_file_name', function ($filename) {
+		$filename = str_replace('ñ', 'n', $filename);
+		return remove_accents($filename);
+	});
+
+
 
 // HELPER METHODS AND FUNCTIONS //////////////////////////////////////////////////////
 
