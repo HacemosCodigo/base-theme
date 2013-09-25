@@ -44,11 +44,11 @@ figure {margin: 0;}
 .clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
 
 /* clearfix for modern browsers */
-.cf:before,
-.cf:after { content:""; display:table; }
-.cf:after { clear:both; }
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
 /* For IE 6/7 (trigger hasLayout) */
-.cf { zoom:1; }
+.clearfix { zoom:1; }
 
 
 /*** FONT FACE ***/
