@@ -2,6 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php print_title(); ?></title>
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
