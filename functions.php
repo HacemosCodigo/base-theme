@@ -59,12 +59,15 @@
 
 
 	// add_action( 'after_setup_theme', function () {
-	// 	$frontpage = get_page_by_path('home', OBJECT);
-	// 	update_option('show_on_front', 'page');
-	// 	update_option('page_on_front', $frontpage->ID);
-
-	// 	$blog = get_page_by_path('blog', OBJECT);
-	// 	update_option('page_for_posts', $blog->ID);
+		
+	// 	$frontPage = get_page_by_path('home', OBJECT);
+	// 	$blogPage  = get_page_by_path('blog', OBJECT);
+		
+	// 	if ( $frontPage AND $blogPage ){
+	// 		update_option('show_on_front', 'page');
+	// 		update_option('page_on_front', $frontPage->ID);
+	// 		update_option('page_for_posts', $blogPage->ID);
+	// 	}
 	// });
 
 
