@@ -54,6 +54,21 @@
 
 
 
+// FRONT PAGE DISPLAYS A STATIC PAGE /////////////////////////////////////////////////
+
+
+
+	// add_action( 'after_setup_theme', function () {
+	// 	$frontpage = get_page_by_path('home', OBJECT);
+	// 	update_option('show_on_front', 'page');
+	// 	update_option('page_on_front', $frontpage->ID);
+
+	// 	$blog = get_page_by_path('blog', OBJECT);
+	// 	update_option('page_for_posts', $blog->ID);
+	// });
+
+
+
 // REMOVE ADMIN BAR FOR NON ADMINS ///////////////////////////////////////////////////
 
 
