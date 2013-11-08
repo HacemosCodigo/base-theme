@@ -216,6 +216,7 @@
 	}
 
 
+
 	/**
 	 * Regresa la url del attachment especificado
 	 * @param  int     $post_id
@@ -227,6 +228,7 @@
 		$image_data = wp_get_attachment_image_src($image_id, $size, true);
 		echo isset($image_data[0]) ? $image_data[0] : '';
 	}
+
 
 
 	/**
