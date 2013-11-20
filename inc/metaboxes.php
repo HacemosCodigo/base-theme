@@ -32,14 +32,16 @@
 	add_action('save_post', function($post_id){
 
 
-		if ( ! current_user_can('edit_page', $post_id)){
+		if ( ! current_user_can('edit_page', $post_id)) 
 			return $post_id;
-		}
 
 
-		if ( defined('DOING_AUTOSAVE') and DOING_AUTOSAVE ){
+		if ( defined('DOING_AUTOSAVE') and DOING_AUTOSAVE ) 
 			return $post_id;
-		}
+		
+		
+		if ( wp_is_post_revision($post_id) OR wp_is_post_autosave($post_id) ) 
+			return $post_id;
 
 
 		if ( isset($_POST['_name_meta']) and check_admin_referer(__FILE__, '_name_meta_nonce') ){
