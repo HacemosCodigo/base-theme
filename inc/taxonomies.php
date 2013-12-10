@@ -35,4 +35,10 @@
 
 			register_taxonomy( 'autor', 'libro', $args );
 		}*/
+		
+		
+		// TERMS
+		/*if ( ! term_exists( 'Carlos Fuentes', 'autor' ) ){
+			wp_insert_term( 'Carlos Fuentes', 'autor' );
+		}*/
 	}
