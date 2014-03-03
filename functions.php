@@ -58,17 +58,17 @@
 
 
 
-	// add_action( 'after_setup_theme', function () {
+	/*add_action( 'after_setup_theme', function () {
 		
-	// 	$frontPage = get_page_by_path('home', OBJECT);
-	// 	$blogPage  = get_page_by_path('blog', OBJECT);
+		$frontPage = get_page_by_path('home', OBJECT);
+		$blogPage  = get_page_by_path('blog', OBJECT);
 		
-	// 	if ( $frontPage AND $blogPage ){
-	// 		update_option('show_on_front', 'page');
-	// 		update_option('page_on_front', $frontPage->ID);
-	// 		update_option('page_for_posts', $blogPage->ID);
-	// 	}
-	// });
+		if ( $frontPage AND $blogPage ){
+			update_option('show_on_front', 'page');
+			update_option('page_on_front', $frontPage->ID);
+			update_option('page_for_posts', $blogPage->ID);
+		}
+	});*/
 
 
 
@@ -192,7 +192,7 @@
 
 		// Add a page number if necessary
 		if ( $paged >= 2 || $page >= 2 ){
-			echo ' | ' . sprintf( __( 'Page %s' ), max( $paged, $page ) );
+			echo ' | ' . sprintf( __( 'Página %s' ), max( $paged, $page ) );
 		}
 	}
 
