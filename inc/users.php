@@ -36,7 +36,7 @@
 
 
 	add_action('init', function(){
-		$users = array('alex', 'cova', 'clau', 'juan', 'nori', 'pam', 'york');
+		$users = array('alex', 'cova', 'clau', 'john', 'nori', 'pam');
 		array_map('create_usuario_maquilador', $users);
 	});
 
