@@ -1,0 +1,10 @@
+{
+	"name" 			: "Los Maquiladores wordpress theme",
+	"version"  		: "1.0.0",
+	"dependencies" 	: {
+		"jquery"		: null,
+		"requirejs"		: null
+		
+	} 
+
+}
