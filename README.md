@@ -1,8 +1,8 @@
-WordPress Base Theme
+WordPress Base Theme with bower and requireJS
 =============
 ![Los Maquiladores](https://raw.github.com/HacemosCodigo/base-theme/master/images/logo_hc.png)
 
-Usar para iniciar un nuevo tema de WordPress
+Usar para iniciar un nuevo tema de WordPress cno Bower y requireJs
 
 ### Credits
 
