@@ -21,12 +21,12 @@ Para buscar paquetes disponibles a través de Bower: <br> <a href="http://bower.
 
 <strong>Para utilizar Bower, este debe estar instalado globalmente via npm. </strong></p>
 
-<div class="highlight">
+<code>
 	npm install -g bower
-</div>
+</code>
 
 <p>Una vez instalado se puede ejecutar el siguiente comando desde la base del directorio y se instalarán todas las dependencias declaradas en el bower.json: <br>(Las librerías se instalarán en 'js/scripts/vendor' de acuerdo con el archivo de configuración .bowerrc)</p>
 
-<div class="highlight">
+<code>
 	bower install
-</div>
+</code>
