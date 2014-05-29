@@ -131,10 +131,6 @@
 	require_once('inc/pages.php');
 	
 	
-	require_once('inc/users.php');
-
-
-
 // MODIFICAR EL MAIN QUERY ///////////////////////////////////////////////////////////
 
 
