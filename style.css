@@ -54,16 +54,20 @@ figure {margin: 0;}
 
 /*** FONT FACE ***/
 
-/*** VARIABLES ***/
 
-/*** MIXINS ***/
-
-/*** FRAMEWORK ***/
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 .first{ margin-left: 0; padding-left: 0;}
 .last{ margin-right: 0; padding-right: 0;}
 
 .left{ float: left;}
 .right{ float: right;}
+
+.hidden{display: none!important;}
+
+
 
 /*** GENERAL ***/
