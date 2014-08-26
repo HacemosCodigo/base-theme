@@ -13,7 +13,7 @@
 				'post_author' => 1,
 				'post_status' => 'publish',
 				'post_title'  => 'Frequently Asked Questions',
-				'post_name'   => 'faq'
+				'post_name'   => 'faq',
 				'post_type'   => 'page'
 			);
 			wp_insert_post( $page, true );
