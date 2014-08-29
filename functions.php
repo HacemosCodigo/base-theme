@@ -229,15 +229,35 @@
 
 	/**
 	 * Imprime active si el string coincide con la pagina que se esta mostrando
-	 * @param  string $string
+	 * @param  string $string, Array $array()
 	 * @return string
 	 */
-	function nav_is($string = ''){
+	function nav_is($compare = array(), $echo = TRUE){
+		
 		$query = get_queried_object();
-
-		if( isset($query->slug) AND preg_match("/$string/i", $query->slug)
-			OR isset($query->name) AND preg_match("/$string/i", $query->name)
-			OR isset($query->rewrite) AND preg_match("/$string/i", $query->rewrite['slug'])
-			OR isset($query->post_title) AND preg_match("/$string/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
-			echo 'active';
+		$inner_array = array();
+		if(gettype($compare) == 'string'){
+			
+			$inner_array[] = $compare;
+		}else{
+			$inner_array = $compare;
+		}
+		
+		foreach ($inner_array as $value) {
+			if( isset($query->slug) AND preg_match("/$value/i", $query->slug)
+				OR isset($query->name) AND preg_match("/$value/i", $query->name)
+				OR isset($query->rewrite) AND preg_match("/$value/i", $query->rewrite['slug'])
+				OR isset($query->post_name) AND preg_match("/$value/i", $query->post_name)
+				OR isset($query->post_title) AND preg_match("/$value/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
+			{
+				if($echo){
+					echo 'active';
+				}else{
+					return 'active';
+				}
+				return;
+			}
+				
+		}
+		return;
 	}
