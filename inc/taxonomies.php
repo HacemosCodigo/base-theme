@@ -38,7 +38,17 @@
 		
 		
 		// TERMS
-		/*if ( ! term_exists( 'Carlos Fuentes', 'autor' ) ){
-			wp_insert_term( 'Carlos Fuentes', 'autor' );
+		/*if ( ! term_exists( 'some-term', 'autor' ) ){
+			wp_insert_term( 'Some term', 'category', array('slug' => 'some-term') );
 		}*/
+
+		/* // SUB TERMS CREATION
+		if(term_exists('parent-term', 'category')){
+			$term = get_term_by( 'slug', 'parent-term', 'category');
+			$term_id = intval($term->term_id);
+			if ( ! term_exists( 'child-term', 'category' ) ){
+				wp_insert_term( 'A child term', 'category', array('slug' => 'child-term', 'parent' => $term_id) );
+			}
+			
+		} */
 	}
