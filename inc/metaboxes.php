@@ -53,7 +53,7 @@
 		/*if ( isset($_POST['_checkbox_meta']) and check_admin_referer(__FILE__, '_checkbox_nonce') ){
 			update_post_meta($post_id, '_checkbox_meta', $_POST['_checkbox_meta']);
 		} else if ( ! defined('DOING_AJAX') ){
-			delete_post_meta($post_id, '_checkbox_meta', $_POST['_checkbox_meta']);
+			delete_post_meta($post_id, '_checkbox_meta');
 		}*/
 
 

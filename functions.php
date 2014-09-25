@@ -238,7 +238,7 @@
 		$query = get_queried_object();
 		$inner_array = array();
 		if(gettype($compare) == 'string'){
-
+			
 			$inner_array[] = $compare;
 		}else{
 			$inner_array = $compare;
@@ -256,9 +256,9 @@
 				}else{
 					return 'active';
 				}
-				return;
+				return FALSE;
 			}
 
 		}
-		return;
+		return FALSE;
 	}
